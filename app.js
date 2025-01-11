@@ -12,6 +12,7 @@ const corsOptions = {
   origin: ["https://rausauth.netlify.app","http://localhost:5173", "https://coderraushan.github.io"], 
   credentials: true, 
 };
+
 app.use(cors(corsOptions));
 const port = process.env.PORT || 9090;
 const MongodbURI = process.env.mongodb_URI;
